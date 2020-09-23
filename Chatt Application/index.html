@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my chat</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-database.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+          apiKey: "AIzaSyBhIYjr1cT1TVualyjsVb68oFle4eKLlb4",
+          authDomain: "chat-application-79a64.firebaseapp.com",
+          databaseURL: "https://chat-application-79a64.firebaseio.com",
+          projectId: "chat-application-79a64",
+          storageBucket: "chat-application-79a64.appspot.com",
+          messagingSenderId: "573989753644",
+          appId: "1:573989753644:web:f246beb2875a78dec09289",
+          measurementId: "G-WK1PZ8P60M"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+
+      </script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+       integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+       crossorigin="anonymous"></script>
+    </head>
+
+<body>
+ 
+
+    <!-- <div class="main"> -->
+
+        <div class="center">
+        <!-- <h1>to delete all conversation</h1> -->
+        <center>
+        <img class="delete" onclick="deleteAll()" src="garbage.png" alt="">
+        </center>
+        </div>
+        <div class="msg">
+        <ul class="ul" id="list">
+         
+        
+        </ul>
+       
+        </div>
+        <div class="box">
+         <input class="input" id="text" type="text" placeholder="type messege">
+         
+         <img id="abc" onclick="chat()" class="icon" src="paper-plane.png" alt="">
+      
+        </div>
+
+    <!-- </div> -->
+
+   
+    <div class="second">
+      <center>
+        <div class="welmain">
+        <div class="wel">
+          <h1 class="heading">WELCOME</h1>
+        </div>
+        <div>
+
+      <input type="text" class="firstname" placeholder="Enter Your Name" id="abcd">
+       <br>
+      <input type="text" class="secondname" placeholder="Enter Those Name You Want To Chat" id="xyz">
+  
+      <br>
+      <button class="btnn" onclick="foo();anim();" >START</button>
+
+    </div>
+    </div>
+    </center>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
